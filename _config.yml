@@ -10,9 +10,7 @@ title: Štatistický slovník online
 email: statisticky.slovnik@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Štatistický slovník online bol vyvinutý v dôsledku frustrácie autora z nedostatku slovenských zdrojov na internete, ktoré by obsahovali komplexný zoznam slovenských štatistických výrazov, ich výkladu a anglických ekvivalentov. Jedná sa o voľnočasový projekt 1 človeka, preto prosím o zľutovanie ak nájdeš nejaké chyby. Ako autor však ocením, ak mi o nich dáš vedieť!
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  kolace
