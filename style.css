@@ -1,11 +1,10 @@
 /* General Rulesets */
 * {
-  color: #ffffff;
+  text-color: #c9d1d9;
+  background-color: #0d1117; 
 }
 body {
   font-family: Helvetica, sans-serif;
-  background: url("https://content.codecademy.com/courses/learn-handlebars/musicon/musicon_bg.png") no-repeat center center fixed;
-  background-size: cover;
 }
 a {
   text-decoration: none;
@@ -81,7 +80,6 @@ nav {
 .term {
   width: 90%;
   overflow: auto;
-  background-color: white;
   opacity: 0.9;
   padding-top: 2%;
   padding-left:5%;
@@ -98,38 +96,19 @@ nav {
   min-width: 100px;
   margin: 0 auto;
 }
-.details {
-  display: inline-block;
-  vertical-align: middle;
-  width: 60%;
-  margin: -1% auto;
-  padding: 2%;
+.termSK {
+  color: #3fb950;
+  font-weight: bold;
 }
 .termSK, .termEN, .synonym, .description, del {
-  color: #000000;
   text-align: left;
-}
-.description, .price {
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 .description {
   height: 100%;
   font-size: 13px;
   overflow: auto;
-}
-.price {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-}
-.sale {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #fa4359;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 /* Contact Page Rulesets */
 #connection {
