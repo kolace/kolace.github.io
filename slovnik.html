@@ -8,17 +8,17 @@
   <link rel="stylesheet" type= "text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
   <script id="templateHB" type="text/x-handlebars-template">
-   {{#each terms}}
-    <article class="term">
-     <section class="details">
-      <h2 class="termSK">{{this.termSK}}</h2>
+    {{#each terms}}
+      <article class="term">
+        <section class="details">
+          <h2 class="termSK">{{this.termSK}}</h2>
 	  <p class="termEN">{{this.termEN}}</p>
 	  <p class="synonym">synonymá: {{this.synonym}}</p>
-      <p class="description">{{this.description}}</p>
+          <p class="description">{{this.description}}</p>
 	  <p class="category">{{this.category}}</p>
 	  <p class="source">zdroj: {{this.source}}</p>
-     </section>
-    </article>
+        </section>
+      </article>
     {{/each}}
   </script>
 </head>
