@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">fuck this shit</h1>
+  <h1 class="page-heading">O projekte</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -17,7 +17,15 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <nav>
+          <ul class="navbar">
+            <li class="current>
+              <a href="index.html">O projekte</a>
+            </li>
+            <li>
+              <a href="slovnik.html">Slovník</a>
+            </li>
+          </ul>
+        </nav>
 
 </div>
