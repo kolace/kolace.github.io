@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Štatistický slovník online</title>
+  <link href="./statDictStyle.css" rel="stylesheet">
+  <script src="handlebars.min.js"></script>
+  <script id="templateHB" type="text/x-handlebars-template">
+   {{#each terms}}
+    <article class="term">
+     <section class="details">
+      <h2 class="termSK">{{this.termSK}}</h2>
+	  <p class="termEN">{{this.termEN}}</p>
+	  <p class="synonym">synonymá: {{this.synonym}}</p>
+      <p class="description">{{this.description}}</p>
+	  <p class="category">{{this.category}}</p>
+	  <p class="source">zdroj: {{this.source}}</p>
+     </section>
+    </article>
+    {{/each}}
+  </script>
+ </head>
+ <body>
+  <header>
+   <section class="container">
+    <h1 class="branding">Štatistický slovník online</h1>
+    <nav>
+     <ul class="navbar">
+      <li>
+       <a href="index.html">O projekte</a>
+      </li>
+      <li class="current>
+       <a href="slovnik.html">Slovník</a>
+      </li>
+      </ul>
+     </nav>
+    </section>
+  </header>
+  <article id="showcase">
+   <section class="container" id="information">
+   </section>
+  </article>
+  <footer>
+    <p>&copy; Štatistický slovník online</p>
+  </footer>
+  <script src="public/main.js"></script>
+ </body>
+</html>
