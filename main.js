@@ -1,91 +1,114 @@
-const context = {
- title: 'Vitaj na stránke projektu Štatistický slovník online!',
- body: 'Štatistický slovník online bol vyvinutý v dôsledku frustrácie autora z nedostatku slovenských zdrojov na internete, ktoré by obsahovali komplexný zoznam slovenských štatistických výrazov, ich výkladu a anglických ekvivalentov. Jedná sa o voľnočasový projekt 1 človeka, preto prosím o zľutovanie ak nájdeš nejaké chyby. Ako autor však ocením, ak mi o nich dáš vedieť!'
- terms: [
+const context = {
+ termSK: 'štatistický výraz',
+ termEN: 'výraz v anglickom jazyku',
+ synonym: 'synonymické výrazy',
+ description: 'Vysvetlenie štatistického výrazu.',
+ category: '1. kategória, 2. kategória',
+ source: 'kniha...',
+ terms: [
  {
-  termSK:'umelá inteligencia',
-  termEN:'artificial intelligence, AI',
-  synonym:,
-  description:'jiosafjfjd',
-  category:,
-  source:''
- },
- {
-  termSK:'hĺbková analýza údajov',
-  termEN:'data mining',
-  synonym:,
+  termSK:'strojové učenie',
+  termEN:'machine learning',
   description:'...',
-  category:,
-  source:''
+  category:'modelovanie, strojové učenie',
+  source:'kniha...'
  },
  {
-  termSK:'graf reziduí',
-  termEN:'residual plot',
-  synonym:,
-  description:'',
-  category:,
-  source:''
+  termSK:'učenie sa bez dohľadu',
+  termEN:'unsupervised learning',
+  synonym:'učenie bez učiteľa, neriadené učenie',
+  description:'Typ metódy induktívneho učenia sa, pri ktorej do učiaceho sa systému vstupujú len hodnoty vstupných premenných prípadov. Cieľom tohto typu učenia je objaviť "prirodzenú" štruktúru vstupných údajov - spoznať údaje, nové trendy a vzorce v nich. Touto metódou sa riešia úlohy ako je regresia, klasifikácia a modelovanie závislostí.',
+  category:'modelovanie, strojové učenie',
+  source:'Terek, M., Horníková, A. & Labudová, V., 2010. Hĺbková analýza údajov, Bratislava: Iura Edition'
  },
  {
-  termSK:'klasifikácia',
-  termEN:'classification',
-  synonym:'',
-  description:' ',
-  category:'',
-  source:''
- },
- {
-  termSK:'p-hodnota',
-  termEN:'p-value',
-  synonym:'',
-  description:'',
-  category:'',
-  source:''
- },
- {
-  termSK:'odľahlé pozorovnanie',
-  termEN:'outlier',
-  synonym:'',
-  description:'',
-  category:'',
-  source:''
+  termSK:'učenie sa pod dohľadom',
+  termEN:'supervised learning',
+  synonym:'učenie s učiteľom, riadené učenie',
+  description:'Typ metódy induktívneho učenia sa, pri ktorej do učiaceho sa systému vstupujú hodnoty vstupných premenných a hodnoty výstupnej premennej. Používa sa pri odhadovaní neznámej závislosti medzi vstupnými premennými a výstupnou premennou. Touto metódou sa riešia úlohy ako je zhlukovanie, sumarizácia a modelovanie zisťovanie odchýlok a zmien.....',
+  category:'modelovanie, strojové učenie',
+  source:'Terek, M., Horníková, A. & Labudová, V., 2010. Hĺbková analýza údajov, Bratislava: Iura Edition'
  },
  {
   termSK:'strojové učenie',
   termEN:'machine learning',
-  synonym:'',
-  description:'',
-  category:'',
-  source:''
+  description:'...',
+  category:'modelovanie, strojové učenie',
+  source:'kniha...'
  },
  {
-  termSK:'neriadené učenie',
+  termSK:'učenie sa bez dohľadu',
   termEN:'unsupervised learning',
-  synonym:'učenie bez učiteľa',
-  description:' ',
-  category:'',
-  source:''
+  synonym:'učenie sa bez učiteľa, neriadené učenie',
+  description:'Typ metódy induktívneho učenia sa, pri ktorej do učiaceho sa systému vstupujú len hodnoty vstupných premenných prípadov. Cieľom tohto typu učenia je objaviť "prirodzenú" štruktúru vstupných údajov - spoznať údaje, nové trendy a vzorce v nich. Touto metódou sa riešia úlohy ako je regresia, klasifikácia a modelovanie závislostí.',
+  category:'modelovanie, strojové učenie',
+  source:'Terek, M., Horníková, A. & Labudová, V., 2010. Hĺbková analýza údajov, Bratislava: Iura Edition'
  },
  {
-  termSK:'riadené učenie',
+  termSK:'učenie sa pod dohľadom',
   termEN:'supervised learning',
-  synonym:'učenie s učiteľom',
-  description:'',
-  category:'',
-  source:''
+  synonym:'učenie s učiteľom, riadené učenie',
+  description:'Typ metódy induktívneho učenia sa, pri ktorej do učiaceho sa systému vstupujú hodnoty vstupných premenných a hodnoty výstupnej premennej. Používa sa pri odhadovaní neznámej závislosti medzi vstupnými premennými a výstupnou premennou. Touto metódou sa riešia úlohy ako je zhlukovanie, sumarizácia a modelovanie zisťovanie odchýlok a zmien.....',
+  category:'modelovanie, strojové učenie',
+  source:'Terek, M., Horníková, A. & Labudová, V., 2010. Hĺbková analýza údajov, Bratislava: Iura Edition'
  },
  {
-  termSK:'',
-  termEN:'',
-  synonym:'',
-  description:'',
-  category:'',
-  source:''
+  termSK:'umelá inteligencia',
+  termEN:'artificial intelligence',
+  synonym: 'AI',
+  description:'...',
+  category:'modelovanie, umelá inteligencia...',
+  source:'kniha...'
+ },
+ {
+  termSK:'hĺbková analýza údajov',
+  termEN:'data mining',
+  synonym:'dolovanie údajov...',
+  description:'...',
+  category:'modelovanie, umelá inteligencia...',
+  source:'kniha...'
+ },
+ {
+  termSK:'graf reziduí',
+  termEN:'residual plot',
+  description:'...',
+  category:'modelovanie, grafy, vyhodnotenie modelu',
+  source:'kniha...'
+ },
+ {
+  termSK:'klasifikácia',
+  termEN:'classification',
+  description:'...',
+  category:'modelovanie',
+  source:'kniha...'
+ },
+ {
+  termSK:'p-hodnota',
+  termEN:'p-value',
+  description:'   ',
+  category:'modelovanie, vyhodnotenie modelu, testy',
+  source:'web...'
+ },
+ {
+  termSK:'odľahlé pozorovnanie',
+  termEN:'outlier',
+  synonym:'extrémne pozorovanie',
+  description:'...',
+  category:'vyhodnotenie modelu, dáta',
+  source:'kniha...'
+ },
+ {
+  termSK:'údaje',
+  termEN:'data',
+  synonym:'dáta',
+  description:'...',
+  category:'dáta',
+  source:'kniha...'
  }
-  ]
+  ]
 };
-const templateElement=document.getElementById("templateHB");
-const templateSource=templateElement.innerHTML;
-const template=Handlebars.compile(templateSource);
-const compiledHtml=template(context);
+const templateElement=document.getElementById("templateHB");
+const templateSource=templateElement.innerHTML;
+const template=Handlebars.compile(templateSource);
+const compiledHtml=template(context);
 document.getElementById("information").innerHTML=compiledHtml;
