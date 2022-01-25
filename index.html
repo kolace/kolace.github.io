@@ -1,51 +1,75 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Štatistický slovník online</title>
-  <link rel="stylesheet" type= "text/css" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-  <script id="templateHB" type="text/x-handlebars-template">
-    <h1>{{title}}</h1>
-    <p>{{body}}</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Štatistický slovník online - O projekte</title>
+  <link rel="stylesheet" type= "text/css" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+  <script id="templateHB" type="text/x-handlebars-template">
+      <article class="term">
+          <b class="termSK">{{termSK}}</b>
+          <b class="termEN">({{termEN}})</b>
+          <p class="synonym">{{synonym}}</p>
+          <p class="description">{{description}}</p>
+          <p class="category">{{category}}</p>
+      </article>
   </script>
 </head>
 <body>
   <header>
-    <section class="container">
-      <h1 class="branding">Štatistický slovník online</h1>
-      <nav>
-        <ul class="navbar">
-          <li class="current">
-            <a href="index.html">O projekte</a>
-          </li>
-          <li>
-            <a href="slovnik.html">Slovník</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <article id="introduction">
-    <section id="information" class="container">
+    <section class="container-header">
+      <h1>Štatistický slovník online</h1>
+      <nav>
+        <ul class="navbar">
+          <li class="current">
+            <a href="index.html">O projekte</a>
+          </li>
+          <li>
+            <a href="./slovnik.html">Slovník</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <article id="showcase">
+    <section class="container-text">
+      <h2>Vitajte na stránke Štatistický slovník online!</h2>
+      <p>Tento slovník bol vyvinutý v dôsledku frustrácie autora z nedostatku slovenských zdrojov na internete, ktoré by obsahovali komplexný zoznam slovenských štatistických výrazov, ich výklady a anglické ekvivalenty.</p>
+      <p>Jedná sa o voľnočasový projekt 1 človeka, preto prosím o zľutovanie ak nájdete nejaké chyby. Ako autor však ocením, ak mi o nich dáte vedieť!</p>
+    </section>
+    <section class="container-text">
+      <h2>O slovníku</h2>
+      <p>Štatistický slovník online obsahuje XY výrazov, pričom ku každému je uvedený anglický preklad výrazu, synonymné výrazy (ak existujú) a vysvetlenie daného štatistického výrazu. </p>
+      <p>Štruktúra slovníkového záznamu je nasledovná:</p>
+      <section class="container-text" id="information">
+      </section>
+      <p>Ako zdroj informácií pre slovník bol použitý internet a niekoľko slovenských publikácií z oblasti štatistiky:</p>
+      <ul class="list">
+        <li>
+          <a href="https://www.martinus.sk/?uItem=110740" target="_blank">Pacáková, V. et al., 2009. Štatistické metódy pre ekonómov, Bratislava: Iura Edition.</a>
+        </li>
+        <li>
+          <a href="https://www.pantarhei.sk/27674-viacrozmerne-statisticke-metody-s-aplikaciami-cd-iveta-stankovicova-maria-vojtkova" target="_blank">Stankovičová, I. & Vojtková, M., 2007. Viacrozmerné štatistické metódy s aplikáciami, Bratislava: Iura Edition.</a>
+        </li>
+        <li>
+          <a href="https://www.martinus.sk/?uItem=48070" target="_blank">Šoltés, E., 2008. Regresná a korelačná analýza s aplikáciami, Bratislava: Iura Edition.</a>
+        </li>
+        <li>
+          <a href="https://www.martinus.sk/?uItem=108479" target="_blank">Terek, M., Horníková, A. & Labudová, V., 2010. Hĺbková analýza údajov, Bratislava: Iura Edition.</a>
+        </li>
+      </ul>
+    </section>
+    <section class="container-text">
+      <h2>Kontakt na tvorcu</h2>
+      <p>Našli ste niekde gramatickú alebo technickú chybu? Chýba Vám v slovníku nejaký výraz? Alebo by ste len chceli tvorcu pochváliť za tú kopu odvedenej práce?</p>
+      <p>Napíšte mi! Spolu môžeme štatistický slovník urobiť ešte lepší :)</p>
     </section>
   </article>
-  <article id="connection">
-    <section id="top">
-      <h2>Kontakt na tvorcu online štatistického slovníka</h2>
-      <p>Našiel si niekde chybu? Alebo si v slovníku nenašiel výraz, ktorý Ťa zaujíma?</p>
-      <p>Napíš mi o tom! Spolu môžeme štatistický slovník urobiť ešte lepší :)</p>
-    </section>
-    <section class="contact">
-      <img src="iconEmail.png">
-      <p>statisticky.slovnik@gmail.com</p>
-    </section>
-  </article>
-  <footer>
-    <p>Štatistický slovník online</p>
-  </footer>
-  <script type="text/javascript" src="main.js"></script>
+  <footer>
+    <p class="footer">Štatistický slovník online</p>
+  </footer>
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
