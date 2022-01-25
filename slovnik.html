@@ -1,50 +1,49 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Štatistický slovník online</title>
-  <link rel="stylesheet" type= "text/css" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-  <script id="templateHB" type="text/x-handlebars-template">
-    {{#each terms}}
-      <article class="term">
-        <section class="details">
-          <h2 class="termSK">{{this.termSK}}</h2>
-	  <p class="termEN">{{this.termEN}}</p>
-	  <p class="synonym">synonymá: {{this.synonym}}</p>
-          <p class="description">{{this.description}}</p>
-	  <p class="category">{{this.category}}</p>
-	  <p class="source">zdroj: {{this.source}}</p>
-        </section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Štatistický slovník online - Slovník</title>
+  <link rel="stylesheet" type= "text/css" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+  <script id="templateHB" type="text/x-handlebars-template">
+    {{#each terms}}
+      <article class="term">
+          <b class="termSK">{{this.termSK}}</b>
+          <b class="termEN">({{this.termEN}})</b>
+          {{#if this.synonym}}
+            <p class="synonym">{{this.synonym}}</p>
+          {{/if}}
+          <p class="description">{{this.description}}</p>
+          <p class="category">{{this.category}}</p>
       </article>
-    {{/each}}
+    {{/each}}
   </script>
 </head>
 <body>
   <header>
-    <section class="container">
-      <h1 class="branding">Štatistický slovník online</h1>
-      <nav>
-        <ul class="navbar">
-          <li>
-            <a href="index.html">O projekte</a>
-          </li>
-          <li class="current">
-            <a href="slovnik.html">Slovník</a>
-          </li>
-        </ul>
-      </nav>
+    <section class="container-header">
+      <h1>Štatistický slovník online</h1>
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="index.html">O projekte</a>
+          </li>
+          <li class="current">
+            <a href="./slovnik.html">Slovník</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </header>
-  <article id="showcase">
-    <section class="container" id="information">
-    </section>
-  </article>
-  <footer>
-    <p>Štatistický slovník online</p>
-  </footer>
-  <script type="text/javascript" src="main.js"></script>
+  <article id="showcase">
+    <section class="container-text" id="information">
+    </section>
+  </article>
+  <footer>
+    <p class="footer">Štatistický slovník online</p>
+  </footer>
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
